@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanzala's Welfare</title>
+  <link rel="stylesheet" href="website1.css">
+  <script src="website1.js" defer></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <form action="#" class="searchbar">
+      <input type="text" placeholder="Search....">
+      <button type="submit"><i class='bx bx-search'></i></button>
+    </form>
+  </header>
+
+ 
+  <section id="home" class="container">
+    <div class="overlay">
+      <h1>Hanzala's Welfare 🙋</h1>
+      <p>
+        Hanzala Welfare works to make life better for our workers and our community.  
+        <br>We provide health care, training, and support to improve skills and living standards.  
+        <br>Our goal is to help every member grow and achieve a better future. ❤️
+      </p>
+      <button onclick="openForm('login')">Login</button>
+      <button onclick="openForm('signup')">Sign Up</button>
+    </div>
+  </section>
+
+
+  <div id="formBox" class="form-box">
+    <div class="form-content" id="loginForm">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+      <p>Don't have an account? <a href="#" onclick="switchForm('signup')">Sign Up</a></p>
+      <button onclick="closeForm()">Close ❌</button>
+    </div>
+
+    <div class="form-content" id="signupForm" style="display:none;">
+      <h2>Sign Up</h2>
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Sign Up</button>
+      <p>Already have an account? <a href="#" onclick="switchForm('login')">Login</a></p>
+      <button onclick="closeForm()">Close ❌</button>
+    </div>
+  </div>
+
+
+  <section id="about" class="About">
+    <h1>About Hanzala’s Welfare</h1>
+    <p class="intro">
+      Hanzala’s Welfare is a non-profit organization dedicated to creating a positive impact 
+      on society through compassion, unity, and service. We work to uplift underprivileged communities, 
+      ensuring access to education, food, and healthcare for those in need.
+    </p>
+
+    <div class="about-card">
+      <h2>Our Mission</h2>
+      <p>
+        To provide hope and opportunities to people in need by addressing 
+        basic human necessities and empowering them to live with dignity.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h2>Our Vision</h2>
+      <p>
+        A world where every individual has access to basic rights, education, 
+        and a chance to thrive — regardless of their background or circumstances.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h2>What We Do</h2>
+      <ul>
+        <li>Distribute food and essential supplies to families in need</li>
+        <li>Support education for underprivileged children</li>
+        <li>Provide free healthcare camps and medical aid</li>
+        <li>Organize community support programs</li>
+      </ul>
+    </div>
+
+    <button id="joinUsBtn">Join Our Mission</button>
+  </section>
+
+ 
+  <section id="services" class="Services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-card"><h3>🍛 Food Distribution</h3><p>We provide fresh meals to underprivileged families and communities every week.</p></div>
+      <div class="service-card"><h3>🩺 Free Medical Camps</h3><p>Organizing health camps with free check-ups, medicines, and awareness programs.</p></div>
+      <div class="service-card"><h3>📚 Education Support</h3><p>Free tuition classes and school supplies for children in need.</p></div>
+      <div class="service-card"><h3>🚑 Disaster Relief</h3><p>Providing emergency aid, food, and shelter during natural calamities.</p></div>
+      <div class="service-card"><h3>🏠 Orphan Care</h3><p>Support, shelter, and guidance for orphaned and abandoned children.</p></div>
+    </div>
+  </section>
+
+ 
+  <section id="contact" class="Contact">
+    <form id="contactform">
+      <h2>Contact Us 📞</h2>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button id="submit">Send</button>
+      <p id="status"></p>
+    </form>
+  </section>
+
+ 
+  <footer>
+    <p>&copy; 2025 Hanzala’s Welfare. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

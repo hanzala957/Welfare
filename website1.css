@@ -1,0 +1,277 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  background: url("welfare.jpg") no-repeat center center/cover;
+  color: white;
+  line-height: 1.6;
+}
+
+
+.header {
+  width: 100%;
+  background: black; 
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+
+.searchbar {
+  display: flex;
+}
+
+.searchbar input {
+  padding: 6px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.searchbar button {
+  padding: 6px 10px;
+  border: none;
+  background: #ffcc00;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+
+section {
+  max-width: 100%;
+  max-height: 100%;
+  background: url(welfare.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 60px 40px;
+  margin: 30px auto;
+  width: 90%;
+  
+  
+}
+
+
+#home {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#home h1 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  color: #ff9900;
+}
+#home p{
+  color: #111;
+  font-size: 23px;
+  margin-bottom: 32px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#home button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background: #ffcc00;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#home button:hover {
+  background: white;
+}
+
+
+.form-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2000;
+  width: 300px;
+  text-align: center;
+}
+
+.form-box input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-box button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background: #ffcc00;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.About h1 {
+  text-align: center;
+  color: #ff9900;
+  margin-bottom: 20px;
+}
+
+.About p {
+  color: #4d4d4d;
+  margin-bottom: 20px;
+  font-size: 19px;
+  font-family: 'Times New Roman', Times, serif;
+  transition: 0.3s;
+}
+.About p:hover {
+  color: #000;
+ 
+}
+
+
+.about-card {
+  background: white;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.about-card:hover {
+  transform: scale(1.02);
+  background: #e0f7fa;
+}
+.about-card h2{
+  color:#ff6600 ;
+}
+ul{
+  margin-left: 12px;
+}
+li{
+  color: #111;
+  padding-left: 12px;
+  font-family: 'Times New Roman', Times, serif;
+   font-size: 19px;
+}
+#joinUsBtn{
+  background: #ff9900;
+  color: #111;
+  text-align: center;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 12px;
+  margin-left: 430px;
+  margin-top: 27px;
+}
+
+.Services h2 {
+  color: #ff9900;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: 5px;
+  font-size: 29px;
+}
+
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 18px;
+  
+}
+
+.service-card {
+  background: #fff;
+  padding: 27px;
+  border-radius: 8px;
+  transition: 0.3s;
+  padding: 35px;
+  
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+  background: #fff3e0; 
+}
+.service-card {
+  width: 32%;  
+ 
+}
+.service-card h3 {
+  color: #ff9900;
+  margin-bottom: 8px;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+.service-card p {
+  color: #4d4d4d;
+  font-size: 0.95rem;
+}
+
+
+#contactform{
+  max-width: 400px;
+  margin: auto;
+  background: #111;
+  padding: 27px;
+  border-radius: 8px;
+}
+
+#contactform input,
+#contactform textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contactform button {
+  padding: 10px 15px;
+  margin-left: 130px;
+  border: none;
+  background: #ffcc00;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+
+footer {
+  background: black;
+  padding: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
